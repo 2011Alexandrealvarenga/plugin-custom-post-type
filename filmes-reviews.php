@@ -19,7 +19,22 @@ class Filmes_reviews {
       return self::$instance;
     }
     private function __construct(){
+      add_action('init', array($this,'register_post_type'));
+    }
+    function register_post_type(){
+      register_post_type('filmes_reviews',array(
+        'labels'      => array(
+          'name'          => 'Filmes Reviews',
+          'singular_name' => 'Filme Review',
+        ),
 
+        'description'     =>'Post para cadastro de reviews',
+        'supports'        =>array(
+          'title','editor','excerpt','author','thumbnail','custom-fields',
+        ),
+        'public'          =>  TRUE,
+        'menu_position'   =>  4
+      ));
     }
 
 }
