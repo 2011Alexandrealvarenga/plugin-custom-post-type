@@ -33,7 +33,8 @@ class Filmes_reviews {
           'title','editor','excerpt','author','thumbnail','custom-fields',
         ),
         'public'          =>  TRUE,
-        'menu_position'   =>  4
+        'menu_icon'       =>  'dashicon-format-video',
+        'menu_position'   =>  4,
       ));
     }
 
