@@ -29,12 +29,12 @@ class Filmes_reviews {
         ),
 
         'description'     =>'Post para cadastro de reviews',
-        'supports'        =>array(
-          'title','editor','excerpt','author','thumbnail','custom-fields',
+        'supports'        => array(
+          'title','editor','excerpt','author','revisions','thumbnail','custom-fields',
         ),
         'public'          =>  TRUE,
-        'menu_icon'       =>  'dashicon-format-video',
-        'menu_position'   =>  4,
+        'menu_icon'       =>  'dashicons-format-video',
+        'menu_position'   =>  2,
       ));
     }
 
